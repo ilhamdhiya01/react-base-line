@@ -1,50 +1,106 @@
-# React + TypeScript + Vite
+# Modern React + TypeScript Project Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React project template with TypeScript, ESLint, Prettier, and Git hooks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core
 
-## Expanding the ESLint configuration
+- ⚡️ [Vite](https://vitejs.dev/) - Lightning fast build tool
+- ⚛️ [React 18](https://reactjs.org/) - JavaScript library for user interfaces
+- 📘 [TypeScript](https://www.typescriptlang.org/) - Type safety
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- 💅 [DaisyUI](https://daisyui.com/) - Tailwind CSS component library
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Code Quality
 
-- Configure the top-level `parserOptions` property like this:
+- 📝 [ESLint](https://eslint.org/) - Linting utility
+- 💖 [Prettier](https://prettier.io/) - Code formatter
+- 🐶 [Husky](https://typicode.github.io/husky/) - Git hooks
+- 📋 [lint-staged](https://github.com/okonet/lint-staged) - Run linters on git staged files
+- 📏 [commitlint](https://commitlint.js.org/) - Lint commit messages
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+### Development Features
+
+- 📁 Path Aliases (`@/*`, `@components/*`, etc.)
+- 🔄 Hot Module Replacement
+- ⚡️ Auto Import Sorting
+- 🔍 TypeScript strict mode
+- 🧹 Auto-fix on save
+- 💪 Enforced code style
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16+
+- Yarn
+
+### Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/yourusername/your-repo.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+```bash
+yarn install
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+3. Start the development server:
+
+```bash
+yarn dev
+```
+
+4. Build for production:
+
+```bash
+yarn build
+```
+
+5. Open your browser and navigate to `http://localhost:5173` to see the app in action.
+
+### Available Scripts
+
+- `yarn dev` - Start development server
+- `yarn build` - Build for production
+- `yarn preview` - Preview production build
+- `yarn lint` - Check for linting errors
+- `yarn lint:fix` - Fix linting errors
+- `yarn format` - Format code with Prettier
+
+### Git Commit Convention
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/):
+
+```bash
+git commit -m "feat: add new feature"
+```
+
+### Format
+
+type(scope?): description
+
+- feat: A new feature
+- fix: A bug fix
+- chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
+- refactor: A code change that neither fixes a bug nor adds a feature
+- perf: A code change that improves performance
+- test: Adding missing tests or correcting existing tests
+
+### Project Structure
+
+```bash
+src/
+├── components/ # Reusable components
+├── pages/ # Page components
+├── hooks/ # Custom hooks
+├── utils/ # Helper functions
+├── services/ # API calls
+├── types/ # TypeScript types
+└── assets/ # Static assets
 ```
