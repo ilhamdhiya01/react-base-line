@@ -23,6 +23,7 @@
     "noUncheckedSideEffectImports": true,
     "resolveJsonModule": true,
 
+    /* Path Aliases */
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
