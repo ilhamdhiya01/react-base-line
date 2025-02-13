@@ -78,6 +78,10 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
+    "no-restricted-exports": "off",
+    "import/prefer-default-export": "off",
+    "consistent-return": "off",
+    "no-console": "warn",
   },
   settings: {
     "import/resolver": {
