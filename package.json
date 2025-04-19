@@ -11,17 +11,20 @@
     "lint:fix": "eslint src --ext ts,tsx --fix",
     "prepare": "husky",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",
     "@tanstack/react-query-devtools": "^5.66.0",
+    "@tanstack/react-router": "^1.116.0",
+    "@tanstack/react-router-devtools": "^1.116.0",
     "axios": "^1.7.9",
     "lucide-react": "^0.475.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.5.1",
-    "react-router-dom": "^6.22.3",
     "tailwindcss": "^3.4.1",
     "zustand": "^5.0.3"
   },
@@ -30,12 +33,18 @@
     "@commitlint/config-conventional": "^19.7.1",
     "@eslint/js": "^9.17.0",
     "@tanstack/eslint-plugin-query": "^5.66.1",
+    "@tanstack/router-plugin": "^1.116.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/json-schema": "^7.0.15",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^3.1.1",
     "autoprefixer": "^10.4.20",
     "daisyui": "^4.7.2",
     "eslint": "^8.57.0",
@@ -49,12 +58,14 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
     "lint-staged": "^15.4.3",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "typescript": "~5.0.4",
     "typescript-eslint": "^8.18.2",
-    "vite": "^5.1.5"
+    "vite": "^5.1.5",
+    "vitest": "^3.1.1"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [

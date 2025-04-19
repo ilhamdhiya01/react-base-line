@@ -1,6 +1,6 @@
 # Modern React + TypeScript Project Template
 
-A modern React project template with TypeScript, ESLint, Prettier, and Git hooks.
+A modern React project template with TypeScript, ESLint, Prettier.
 
 ## Features
 
@@ -10,7 +10,8 @@ A modern React project template with TypeScript, ESLint, Prettier, and Git hooks
 - ⚛️ [React 18](https://reactjs.org/) - JavaScript library for user interfaces
 - 📘 [TypeScript](https://www.typescriptlang.org/) - Type safety
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- 💅 [DaisyUI](https://daisyui.com/) - Tailwind CSS component library
+- 🌐 [TanStack Router](https://tanstack.com/router) - Router for React
+- 📊 [TanStack Query](https://tanstack.com/query) - Data fetching library
 
 ### Code Quality
 
@@ -22,7 +23,6 @@ A modern React project template with TypeScript, ESLint, Prettier, and Git hooks
 
 ### Development Features
 
-- 📁 Path Aliases (`@/*`, `@components/*`, etc.)
 - 🔄 Hot Module Replacement
 - ⚡️ Auto Import Sorting
 - 🔍 TypeScript strict mode
