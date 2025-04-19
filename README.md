@@ -95,15 +95,43 @@ type(scope?): description
 - perf: A code change that improves performance
 - test: Adding missing tests or correcting existing tests
 
+### Unit Test Placement
+
+Unit test files should be placed next to the file being tested, using the `.test.ts` or `.test.tsx` suffix.  
+Example:
+- `src/components/ui/Button/Button.test.tsx`
+- `src/hooks/useAuth.test.ts`
+- `src/utils/formatDate.test.ts`
+
 ### Project Structure
 
 ```bash
 src/
-├── components/ # Reusable components
-├── pages/ # Page components
-├── hooks/ # Custom hooks
-├── utils/ # Helper functions
-├── services/ # API calls
-├── types/ # TypeScript types
-└── assets/ # Static assets
+├── components/        # Reusable components
+│   ├── ui/            # UI components (buttons, inputs, cards, etc)
+│   ├── module/        # Module-specific components
+│   └── shared/        # Shared/global components
+├── pages/             # Page components
+├── hooks/             # Custom hooks
+│   ├── module/        # Module-specific hooks
+│   └── shared/        # Shared/global hooks
+├── utils/             # Helper functions
+├── lib/               # Library code, third-party wrappers, or custom utilities
+├── services/          # API calls
+├── context/           # React context providers (global state, theme, auth, etc)
+├── stores/            # State management (e.g. Zustand, Redux)
+│   ├── module/        # Module-specific stores
+│   └── shared/        # Shared/global stores
+├── schema/            # Validation schemas (e.g. Zod, Yup)
+├── types/             # TypeScript types
+│   ├── api/           # API types
+│   ├── module/        # Module-specific types
+│   └── shared/        # Shared/global types
+├── styles/            # Styles, Tailwind config, etc
+├── assets/            # Static assets (images, fonts, etc)
+├── routes/            # App route definitions (TanStack Router)
+├── layouts/           # Layout wrappers for pages (e.g. MainLayout, AuthLayout)
+├── constants/         # Project-wide constants (e.g. app config, enums, etc)
+├── test/              # Test setup files and global test utilities
+│   └── setup.ts       # [Do not modify] Global test setup for Vitest
 ```
