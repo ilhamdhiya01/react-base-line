@@ -73,6 +73,8 @@ yarn build
 - `yarn lint` - Check for linting errors
 - `yarn lint:fix` - Fix linting errors
 - `yarn format` - Format code with Prettier
+- `yarn test` - Run unit tests
+- `yarn test:ui` - Run UI tests
 
 ### Git Commit Convention
 
