@@ -20,6 +20,7 @@ A modern React project template with TypeScript, ESLint, Prettier.
 - 🐶 [Husky](https://typicode.github.io/husky/) - Git hooks
 - 📋 [lint-staged](https://github.com/okonet/lint-staged) - Run linters on git staged files
 - 📏 [commitlint](https://commitlint.js.org/) - Lint commit messages
+- 🧪 [Vitest](https://vitest.dev/) - Testing framework
 
 ### Development Features
 
